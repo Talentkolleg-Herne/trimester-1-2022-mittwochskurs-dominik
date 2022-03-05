@@ -1,71 +1,32 @@
-console.log('Hello World');
-console.log("Hello World");
-
-console.log(190 / 5);
-
-// Dies ist ein Kommentar
-console.log("Kein Kommentar");
-
-
 /*
-  + 
-  - 
-  /
-  *
+for (let i = 0; i <= 5; i = i + 1) {
+  console.log("Die Quadratzahl von " + i + " ist gleich " + i*i);
+}
+
+let i = 6;
+while (i <= 10) {
+  console.log("Die Quadratzahl von " + i + " ist gleich " + i * i);
+  i = i + 1;
+}
 */
 
 
-let meineVariable = 11;
-let meineVariable2 = "11";
-let zahlenVariable = 190.90;
 
+// 1 bis 100 ausgebt
 
+// Nur die geraden Zahlen von 1 bis 100 ausgebt
+// Nur die ungeraden Zahlen von 1 bis 100 ausgebt
 
-console.log(meineVariable);
-console.log(meineVariable2);
+function gebeGeradeAus(von, bis){
+  let i = von;
 
-/*
->
-<
->=
-<=
-!=
-==
-===
-*/
-
-/*
-  Alter = 16
-
-  14 = Mofa
-  15 = Roller
-  16 = Motorrad
-  17 = begleitet Auto
-  18 = alleine Auto
-*/
-
-let alter = 26;
-
-
-if (alter >= 14 ) {
-  console.log("Du kannst Mofa fahren");
-}
-if (alter >= 15 ) {
-  console.log("Du kannst Roller fahren");
-}
-if (alter >= 16 ) {
-  console.log("Du kannst Motorrad fahren");
-}
-if (alter == 17 ) {
-  console.log("Du kannst NUR begleitet Auto fahren");
-}
-else if (alter >= 18) {
-  console.log("Du kannst Auto fahren")
+  while (i <= bis) {
+    if (i % 2 == 0) {
+      console.log(i)
+    }
+    i = i + 1;
+  }
 }
 
-
-
-
-
-
-// TODO: Input von Checkbox oder Textinput in JS
+gebeGeradeAus(10, 20);
+gebeGeradeAus(11, 13);
