@@ -185,9 +185,7 @@ if (meinAlter >= 18) {
 > Dieses Programm gibt ein "Du bist volljährig" wenn der Benutzer älter oder gleich 18 Jahre alt ist. Zudem wird noch ein anderer Text ausgebenen wenn das alter größer oder gleich 16 ist. Als alternative wenn nichts anderes zutrifft wird "Du bist noch minderjährig" ausgegeben. 
 > In dem Beispiel wird das `if else`-Konstrukt verwendet, welches nur die erste Bedingung ausführt. Das ist hier besonders Sinnvoll, da ansonsten immer beide Texte ausgebeben werden würden (da jemand der über 18 Jahre ist auch immer über 16 Jahre alt ist) und wir mit dem `if else`-Konstrukt nun nach der ersten Bedingung den rest des Konstrukts überspringen können, sollte jemand über oder gleich 18 Jahre alt sein. 
 
-
-
-## Schleifen
+### Schleifen
 Schleifen dienen in der Programmierung dazu Aufgaben zu bewältigen die öfters getan werden müssen. So ist bei einem Spiel immer so eine Schleife dabei die z.B. unseren Bildschirm immer neu lädt um so z.B. Dinge bewegen zu können. So kann man mit dem Schlüsselwort `while` so eine Schleife einleiten und dann in runden Klammern dahinter sofort die Bedingung definieren.
 
 ```js
@@ -211,7 +209,7 @@ while(x <= 1000) { // solange x kleiner oder gleich ist als 1000 gehen wir in di
 }
 ```
 
-## Funktionen
+### Funktionen
 Mittels Funktionen können Codeteile ausgelagert werden und zentral an einer Stelle zur Verfügung gestellt werden. Das ist von Vorteil, wenn man Code in einem Programm oft verwendet und daher den Code nur an einer Stelle updaten möchte. Desweiteren ist es mit Funktionen einfacher funktionalitäten zu teilen (wie es z.B. Phaser3 macht bzw. alle anderen Frameworks). 
 Um in Javascript eine Funktion zu erstellen, wird das Schlüsselwort `function` vor dem Namen der Funktion geschrieben. Danach kommen Klammern `()`. In diesen Klammern können nun Parameter definiert werden um bestimmte Variablen auch innerhalb der Funktion zur Verfügung zu haben. Die Funktion kann nach der definition aufgerufen werden, indem man den Namen mit den beiden Klammern schreibt.
 
